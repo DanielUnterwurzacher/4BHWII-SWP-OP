@@ -1,7 +1,7 @@
 package Binaersuche;
 
 public class IterativeSuche {
-	static int anzahlSchritte;
+	private static int anzahlSchritte;
 	
 	public static void main(String[] args) {
 		int[] arr = {0,1,2,3,4,5,6,7,8,9};
@@ -19,7 +19,7 @@ public class IterativeSuche {
 		System.out.println("Binäre Methode:");
 		System.out.println("===============================");
 		
-		if (binaer(11, arr)) {
+		if (binaer(7, arr)) {
 			System.out.println("Zahl wurde gefunden!");
 			System.out.println("Benötigte Schritte: "+anzahlSchritte);
 		}else {
