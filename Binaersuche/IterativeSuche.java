@@ -1,7 +1,7 @@
 package Binaersuche;
 
 public class IterativeSuche {
-
+	//HALLO
 	private static int anzahlSchritte;
 	
 	public static void main(String[] args) {
