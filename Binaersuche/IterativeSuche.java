@@ -1,6 +1,8 @@
 package Binaersuche;
 
 public class IterativeSuche {
+
+	//HALLOOOOOOOOOOOOOOOOOOOOOOOOO
 	private static int anzahlSchritte;
 	
 	public static void main(String[] args) {
