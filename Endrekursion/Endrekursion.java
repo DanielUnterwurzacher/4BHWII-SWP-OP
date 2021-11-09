@@ -41,7 +41,7 @@ public class Endrekursion{
         System.out.println("Rekursiv: "+powR+"\t Zeit: "+(time2 - time1)+" Nanosekunden");
 
         time1 = System.nanoTime();
-        int powE = powfakEndrekursiv(4,2);
+        int powE = powfakEndrekursiv(4,2,1);
         time2 = System.nanoTime();
         System.out.println("Endrekursiv: "+powE+"\t Zeit: "+(time2 - time1)+" Nanosekunden");
 
@@ -85,11 +85,11 @@ public class Endrekursion{
         return summeEndrekursiv(x + n,n - 1);
     }
 
-    public static int powfakEndrekursiv(int x, int n){
-        if (n == 0){
-            return x;
+    public static int powfakEndrekursiv(int x, int y, int n){
+        if (y == 0){
+            return n;
         }
-        return powfakEndrekursiv(x * x, n - 1);
+        return powfakEndrekursiv(x, y - 1, n * x);
     }
 
 }
