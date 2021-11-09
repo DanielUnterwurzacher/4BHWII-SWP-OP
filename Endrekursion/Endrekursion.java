@@ -5,45 +5,45 @@ public class Endrekursion{
         System.out.println("Fakultät:");
         System.out.println("===============");
 
-        long time1 = System.nanoTime();
+        long timeFakR1 = System.nanoTime();
         int fakR = fakultaetRekursiv(4);
-        long time2 = System.nanoTime();
-        System.out.println("Rekursiv: "+fakR+"\t Zeit: "+ (time2 - time1)+" Nanosekunden");
+        long timeFakR2 = System.nanoTime();
+        System.out.println("Rekursiv: "+fakR+"\t Zeit: "+ (timeFakR2 - timeFakR1)+" Nanosekunden");
 
-        time1 = System.nanoTime();
+        long timeFakE1 = System.nanoTime();
         int fakE = fakultaetEndrekursiv(1,4);
-        time2 = System.nanoTime();
-        System.out.println("Endrekursiv: "+fakE+"\t Zeit: "+ (time2 - time1)+" Nanosekunden");
+        long timeFakE2 = System.nanoTime();
+        System.out.println("Endrekursiv: "+fakE+"\t Zeit: "+ (timeFakE2 - timeFakE1)+" Nanosekunden");
 
         System.out.println();
 
         System.out.println("Summe:");
         System.out.println("===============");
 
-        time1 = System.nanoTime();
+        long timeSumR1 = System.nanoTime();
         int sumR = summeRekursiv(4);
-        time2 = System.nanoTime();
-        System.out.println("Rekursiv: "+sumR+"\t Zeit: "+(time2 - time1)+" Nanosekunden");
+        long timeSumR2 = System.nanoTime();
+        System.out.println("Rekursiv: "+sumR+"\t Zeit: "+(timeSumR2 - timeSumR1)+" Nanosekunden");
 
-        time1 = System.nanoTime();
+        long timeSumE1 = System.nanoTime();
         int sumE = summeEndrekursiv(0,4);
-        time2 = System.nanoTime();
-        System.out.println("Endrekursiv: "+sumE+"\t Zeit: "+(time2 - time1)+" Nanosekunden");
+        long timeSumE2 = System.nanoTime();
+        System.out.println("Endrekursiv: "+sumE+"\t Zeit: "+(timeSumE2 - timeSumE1)+" Nanosekunden");
 
         System.out.println();
 
         System.out.println("Potenz:");
         System.out.println("===============");
         
-        time1 = System.nanoTime();
+        long timePowR1 = System.nanoTime();
         int powR = powfakRekursiv(4,2);
-        time2 = System.nanoTime();
-        System.out.println("Rekursiv: "+powR+"\t Zeit: "+(time2 - time1)+" Nanosekunden");
+        long timePowR2 = System.nanoTime();
+        System.out.println("Rekursiv: "+powR+"\t Zeit: "+(timePowR2 - timePowR1)+" Nanosekunden");
 
-        time1 = System.nanoTime();
+        long timePowE1 = System.nanoTime();
         int powE = powfakEndrekursiv(4,2,1);
-        time2 = System.nanoTime();
-        System.out.println("Endrekursiv: "+powE+"\t Zeit: "+(time2 - time1)+" Nanosekunden");
+        long timePowE2 = System.nanoTime();
+        System.out.println("Endrekursiv: "+powE+"\t Zeit: "+(timePowE2 - timePowE1)+" Nanosekunden");
 
         System.out.println();
     }
