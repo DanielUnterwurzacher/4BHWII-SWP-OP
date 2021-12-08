@@ -1,28 +1,42 @@
 package Bubblesort;
 import java.util.Arrays;
+import java.util.Random;
 
 public class Bubblesort{
     public static void main(String[] args) {
-        int[] x = {3,2,7,5,9};
+        int[] x = fillArray(100);
         System.out.println("Unsortiertes Array:");
         System.out.println(Arrays.toString(x));
         System.out.println("Sortiertes Array:");
-        System.out.println(Arrays.toString(sort(x)));
+        long a = System.nanoTime();
+        int[] y = sort(x);
+        long b = System.nanoTime();
+        System.out.println(Arrays.toString(y));
+        System.out.println("Benötigte Zeit: "+(b-a)+" Nanosekunden");
     }
 
     public static int[] sort (int[] array){
-        boolean again = true;
-        while(again){
-            for(int x = 0; x < array.length-1;x++){
-                again = false;
-                if(array[x] > array[x+1]){
-                    int i = array[x];
-                    array[x] = array[x+1];
-                    array[x+1] = i;
-                    again = true;
+        for(int x = array.length; x > 1; x--){
+            for(int i = 0; i < x-1; i++){
+                if(array[i] > array[i+1]){
+                    int help = array[i];
+                    array[i] = array[i+1];
+                    array[i+1] = help;
                 }
             }
         }
+        return array;
+    }
+
+    public static int[] fillArray(int laenge){
+        int[] array = new int[laenge];
+        Random rand = new Random(); 
+
+        for (int i = 0; i<array.length; i++){
+            int value = rand.nextInt(100); 
+            array[i] = value;
+        }
+
         return array;
     }
 }
