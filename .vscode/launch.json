@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GFG",
+            "request": "launch",
+            "mainClass": "Quicksort.GFG",
+            "projectName": "4BHWII-SWP-OP_acca88d0"
+        },
+        {
+            "type": "java",
             "name": "Launch Endrekursion",
             "request": "launch",
             "mainClass": "Endrekursion.Endrekursion",
