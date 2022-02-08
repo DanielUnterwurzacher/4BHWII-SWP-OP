@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Endrekursion",
+            "request": "launch",
+            "mainClass": "Endrekursion.Endrekursion",
+            "projectName": "4BHWII-SWP-OP_acca88d0"
+        },
+        {
+            "type": "java",
+            "name": "Launch RekursiveMethoden",
+            "request": "launch",
+            "mainClass": "Rekursiv.RekursiveMethoden",
+            "projectName": "4BHWII-SWP-OP_acca88d0"
+        },
+        {
+            "type": "java",
             "name": "Launch Bubblesort",
             "request": "launch",
             "mainClass": "Bubblesort.Bubblesort",
